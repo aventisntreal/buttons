@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Buttons</title>
+        <link rel="stylesheet" href="buttons.css">
+        <link rel="shortcut icon" type="image/jpg" href="icon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+        0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="buttons.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <!-- red and green figures -->
+            <div id="shadow-1"></div>
+            <div id="shadow-2"></div>
+            <!-- Upper block -->
+            <div id="block_upper">
+                <!-- Button 1 -->
+                <div id="button_1" onmouseover="Button1Func()" onmouseout="Button1RevFunc()">
+                    <p id="button_1_p" style="color: var(--button1_white); margin-top: 36px; transition: 0.2s; letter-spacing: 4px;">BUTTON 1</p>
+                </div>
+                <!-- Button 2 -->
+                <div id="button_2_out">
+                    <div id="button_2_in" onmouseover="Button2Func()" onmouseout="Button2RevFunc()">
+                        <p style="color: chartreuse; letter-spacing: 6px;" ><b>BUTTON 2</b></p>
+                    </div>
+                </div>
+                <!-- Button 3 -->
+                <div id="button_3">
+                    <p style="letter-spacing: 4px; color: white; margin-top: 29px;"><b>BUTTON 3</b></p>
+                </div>
+                <!-- Button 4 -->
+                <div id="button_4">
+                    <p style="letter-spacing: 4px; margin-top: 29px; cursor: pointer;" onmouseover="Button4Func()" onmouseout="Button4RevFunc()"><b>BUTTON 4</b></p>
+                    <div id="hl1" style="background-color: black; height: 2px; width: var(--button4_wid); transition: 0.2s;"></div>
+                </div>
+            </div>
+            <!-- Middle block -->
+            <div id="block_middle">
+                <!-- Button 5 (settings) -->
+                <div id="button_5"></div>
+                <!-- Button 6 (switcher) -->
+                <div id="button_6" onclick="Button6Func()">
+                    <div id="button_6_circ"></div>
+                </div>
+                <!-- Button 7 -->
+                <div id="button_7">
+                    <p style="position: absolute; margin-top: 23px; margin-left: 22px; letter-spacing: 4px; color: white;"><b>BUTTON 7</b></p>
+                    <div id="button_7_alt">
+                        <p style="position: absolute; margin-top: 23px; margin-left: 22px; letter-spacing: 4px; color: white;"><b>BUTTON 7</b></p>
+                    </div>
+                </div>
+                <!-- Button 8 (drop-down)--> 
+                <div id="button_8">
+                    <div id="block_1" onclick="Button8Func()">
+                        <p style="position: absolute; margin-top: 30px; letter-spacing: 4px; margin-left: 35px;"><b>BUTTON 8</b></p>
+                        <div id="button_8_arrow"></div>
+                    </div>
+                    <div id="block_inner">
+                        <div id="option_1">
+                            <p style="margin-top: 30px; letter-spacing: 4px; margin-left: 47px;">OPTION 1</p>
+                        </div>
+                        <div id="option_2">
+                            <p style="margin-top: 30px; letter-spacing: 4px; margin-left: 47px;">OPTION 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lower block -->
+            <div id="block_bottom">
+                <!-- Button 9 -->
+                <div id="button_9" onmouseover="Button9Func()" onmouseout="Button9RevFunc()">
+                    <p class="button_9_p"><b>BUTTON 9</b></p>
+                    <p class="button_9_p"><b>BUTTON 9</b></p>
+                </div>
+                <!-- Button 10 -->
+                <div id="button_10">
+                    <p style="margin-top: 27px"><b>BUTTON 10</b></p>
+                </div>
+                <!-- Button 11 -->
+                <div id="button_11">
+                    <p style="margin-top: 15px; letter-spacing: 4px; color: orangered; cursor: pointer; width: 180px; margin-left: 80px"><b>BUTTON 11</b></p>
+                </div>
+                <!-- Button 12 (favorite) -->
+                <div id="button_12" onclick="Button12Func()">
+                    <div id="button_12_on"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
